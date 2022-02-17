@@ -43,6 +43,7 @@ export default function Home({product} : HomeProps) {
 
 //Essa função abaixo está sendo executada no lado do node (back-end) que roda no next junto com nossa app, 
 // com ela nós vamos conseguir acessar as informações deste server-side para o front
+
 export const getStaticProps: GetStaticProps = async () => {
   const price = await stripe.prices.retrieve('price_1KRRPmLJM8tOEvaVFsOD7ibN')
 
